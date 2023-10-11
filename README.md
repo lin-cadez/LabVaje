@@ -1,2 +1,3 @@
 # Laboratorijske vaje
-Tu so shranjeni vsi moji zapiski in projekti, ki sem/jih bom naredil.
+
+Tu so shranjene vse moje vaje, zapiski in projekti, ki sem/jih bom naredil.
