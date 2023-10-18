@@ -1,12 +1,8 @@
-;
-; Vaja 3.asm
-;
-; Created: 18. 10. 2023 13:44:25
-; Author : Vegova
-;
+ldi r16, 4
 
+zanka:
+	dec r16
+	brne zanka
 
-; Replace with your application code
-start:
-    inc r16
-    rjmp start
+konc:
+	rjmp konc
