@@ -1,0 +1,7 @@
+
+3. ura:
+	- adc : add z "carry" flagom
+	- lds : load from dataspace, (lds r16, 0x100 : v r16 naloži podatke iz rama na naslovu 0x100
+	- sts : store to dataspaces, (sts 0x100, r16 : v naslov 0x100 napiše vrednost r16)
+	- call : pokliče neko rutino, ki ima v njej "ret"
+	

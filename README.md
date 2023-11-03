@@ -1,3 +1,3 @@
 # Laboratorijske vaje
 
-Tu so shranjene vse moje vaje, zapiski in projekti, ki sem/jih bom naredil.
+Tukaj bodo shranjene vse vaje, ki jih bomo naredili pri LAB RAČ GIM 2. LETNIK.

@@ -1,0 +1,15 @@
+Ukazi
+2. ura:
+	- nop : No operation
+	- ldi : neki damo v register (ne dela v registrih med r0-r15!!!)
+	- add : prišteje (add r16, r17 : v r16 vpiše r16+r17)
+	- rjmp : skoči na nek tag
+	- inc : zveča za ena
+	- dec : zmanjša za ena
+	- brne : skoči, če ni enako (če ni nobene, je če ni enaki nič)	
+	- breq : skoči, če je enako
+	V arduionu imamo setup to k sestevamo in loop je "forever"
+	- mov : eno stvar premakne iz enga registra v drugega, bolj je "copy", ker ne zbriše prvega(mov r16, r15 : r15 copy to r16)
+	0x pomeni šestnajstiška
+	0b pomeni dvojiška
+	0 pomeni osmiški
