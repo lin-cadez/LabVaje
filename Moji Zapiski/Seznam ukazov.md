@@ -26,6 +26,12 @@
     inc r27
     cpi r27,5 ; Compare r27 to 5| Če ni enako je 1, če je enako je 0
     brne loop ; Skoči nazaj na začetek če r27 != 5
+* **breq** : skoči, če je enako
+
+  * loop:
+    inc r27
+  * cpi r27, 5; če je r27 enako 5 bo šlo še enkrat skozi, čene pa ne
+  * breq loop
 * **mov:** kopira vsebino enega registra v drug register
 
   * mov r16, r17
@@ -47,4 +53,6 @@
   * forever:
     rjmp forever
 * **mul**: množenje, pri čemer ti da višjnji del številke v r1, nižji v r0 =>AVR je little endian
-  	mul r5, r4
+
+  * mul r5, r4
+*
