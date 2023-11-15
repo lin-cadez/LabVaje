@@ -8,7 +8,7 @@ Ukazi
 	- dec : zmanjša za ena
 	- brne : skoči, če ni enako (če ni nobene, je če ni enaki nič)	
 	- breq : skoči, če je enako
-	V arduionu imamo setup to k sestevamo in loop je "forever"
+	V arduinotu imamo setup to k sestevamo in loop je "forever"
 	- mov : eno stvar premakne iz enga registra v drugega, bolj je "copy", ker ne zbriše prvega(mov r16, r15 : r15 copy to r16)
 	0x pomeni šestnajstiška
 	0b pomeni dvojiška
