@@ -41,6 +41,10 @@
 * **sts:** store data to dataspace
 
   * sts 0x100, r1
+* **st:** pogleda kateri naslov je v registru Z in shrani tja
+
+  * st Z+, r30
+* **lpm:** load program memory. Za razliko od RAM-a je program memory organizran v 16-bitne prostore (zato je zudi x*2), ker RAM je samo v 8-bitne
 * **ret** in **call:** rabiš da lahko narediš funkcijo
 
   * call save; pokliče funkcijo save
@@ -55,4 +59,9 @@
 * **mul**: množenje, pri čemer ti da višjnji del številke v r1, nižji v r0 =>AVR je little endian
 
   * mul r5, r4
-*
+* **brcc:** branch if carry cleared
+* **brcs:** branch if carry set
+* **lsl**: logical shift left
+* **lsr**: logical shift right
+* **ror:** rotate right through carry for 1 bit
+* **rol:** rotate left through carry for 1 bit
