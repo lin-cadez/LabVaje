@@ -65,3 +65,5 @@
 * **lsr**: logical shift right
 * **ror:** rotate right through carry for 1 bit
 * **rol:** rotate left through carry for 1 bit
+* brge: BRNACH OF GREATER OR EQUAK THAN
+* brls: branch if smaller than
