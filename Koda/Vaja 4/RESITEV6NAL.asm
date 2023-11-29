@@ -35,7 +35,7 @@ sestevanje:
 	adc r21, r18
 
 	;---preverim če je konec---;
-	cpI ZL, 0x20
+	cpi ZL, 0x20
 	brne sestevanje
 	
 	
