@@ -1,43 +1,21 @@
-;   8.	Napišite podprogram, ki bo preveril, ali je ASCII koda šestnajstiška števka ali ne.	( 3 t ) (Z=1 ob izhodu programa pomeni, da je)! Pomagaj si z ASCII tabelo spodaj.
-
-setup:
-ldi r16, 'z' // H
-call zacetek
-rjmp konec
-
-zacetek:
-    cpi r16, 0x7B
-    brcs je_manj_od_7B
-    rjmp ni_crka
-
-je_manj_od_7B:
-    clc
+ldi r16, 0x5a
+call isLetter
+end:
+    rjmp end
+isLetter:
     cpi r16, 0x41
-    brcc je_vec_od_40
-    rjmp ni_crka
-
-je_vec_od_40:
-    cpi r16, 0x5B
-    breq ni_crka
-    cpi r16, 0x5C
-    breq ni_crka
-    cpi r16, 0x5D
-    breq ni_crka
-    cpi r16, 0x5E
-    breq ni_crka
-    cpi r16, 0x5F
-    breq ni_crka
-    cpi r16, 0x60
-    breq ni_crka
-    rjmp je_crka
-
-ni_crka:
-    clz
+    brcs Terminate ; če je manjša od 0x41-1 bo šlo na Terminate
+    cpi r16, 0x7A+1
+    brcc Terminate
+    ldi r17, 0x60
+    loop:
+        cp r16, r17
+        breq Terminate
+        dec r17
+        cpi r17, 0x5a
+        brne loop
+    sez; set zero flag
     ret
-
-je_crka:
-    sez
-    ret
-
-konec:
-    rjmp konec
+    Terminate:
+        clz ;clear zero flag
+        ret
