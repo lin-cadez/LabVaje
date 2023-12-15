@@ -3,14 +3,14 @@
 
 	.org 0x0034
 start:
-    // išèemo, kje je morsejeva koda za èrko C
+    // iï¿½ï¿½emo, kje je morsejeva koda za ï¿½rko C
 	ldi ZL, LOW (morse*2)   // tukaj je naslov spiska, kje so morsejeve kode
 	ldi ZH, HIGH(morse*2)	// tam je tudi naslov crke A
 	
-	// prištejemo 4 za to, da dobimo èrko C (ki je 2 èrki naprej od A, 2*2 = 4)
+	// priï¿½tejemo 4 za to, da dobimo ï¿½rko C (ki je 2 ï¿½rki naprej od A, 2*2 = 4)
 	adiw ZH:ZL,4     // add immediate to word
 
-	// tukaj dobimo naslov èrke C
+	// tukaj dobimo naslov ï¿½rke C
 	lpm XL, Z+
 	lpm XH, Z+
 	// prekopiramo ga v Z, ker LPM dela samo z registrom Z
@@ -59,5 +59,3 @@ morse:
 	.dw crka_b*2
 	.dw crka_c*2
 	.dw crka_d*2
-
-

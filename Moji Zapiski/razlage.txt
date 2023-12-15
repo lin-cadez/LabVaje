@@ -3,7 +3,7 @@ Ukazi
 	- nop : No operation
 	- ldi : neki damo v register (ne dela v registrih med r0-r15!!!)
 	- add : prišteje (add r16, r17 : v r16 vpiše r16+r17)
-	- rjump : skoči na nek tag
+	- rjmp : skoči na nek tag
 	- inc : zveča za ena
 	- dec : zmanjša za ena
 	- brne : skoči, če ni enako (če ni nobene, je če ni enaki nič)	

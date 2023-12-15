@@ -11,6 +11,7 @@ isNumber:
     brcc Terminate
     sez
     ret
-    Terminate:
+
+Terminate:
         clz
         ret
